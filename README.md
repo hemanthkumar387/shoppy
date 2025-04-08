@@ -38,7 +38,7 @@ This is a full-stack e-commerce shopping cart application. The **frontend** is b
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 📦 shoppyglobe
 ├── 📂 frontend
 │   ├── 📂 src
@@ -54,7 +54,7 @@ This is a full-stack e-commerce shopping cart application. The **frontend** is b
 │   ├── 📂 controllers (Product.controller.js, Cart.controller.js, User.controller.js)
 │   ├── server.js
 │   └── .env
-\`\`\`
+```
 
 ---
 
@@ -94,26 +94,26 @@ Collections:
 ## 🚀 Running the Project
 
 ### 1️⃣ Clone the repo
-\`\`\`bash
-git clone https://github.com/hemanthkumar387/ShoppyGlobe.git
-cd shoppyglobe
-\`\`\`
+```bash
+git clone https://github.com/hemanthkumar387/shoppy.git
+cd shoppy
+```
 
 ### 2️⃣ Setup Frontend
-\`\`\`bash
+```bash
 cd frontend
 npm install
 npm run dev
 # Visit: http://localhost:5173
-\`\`\`
+```
 
 ### 3️⃣ Setup Backend
-\`\`\`bash
+```bash
 cd backend
 npm install
 npm start
 # Backend runs on: http://localhost:5000
-\`\`\`
+```
 
 ---
 
