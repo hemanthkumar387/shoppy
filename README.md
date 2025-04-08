@@ -96,7 +96,7 @@ Collections:
 ### 1️⃣ Clone the repo
 ```bash
 git clone https://github.com/hemanthkumar387/shoppy.git
-cd shoppy
+cd shoppy-main
 ```
 
 ### 2️⃣ Setup Frontend
@@ -111,7 +111,7 @@ npm run dev
 ```bash
 cd backend
 npm install
-npm start
+npx nodemon server.js
 # Backend runs on: http://localhost:5000
 ```
 
