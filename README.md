@@ -1,6 +1,6 @@
 # 🛍️ ShoppyGlobe - Full Stack Shopping Cart Application
 
-This is a full-stack e-commerce shopping cart application. The **frontend** is built using React, Redux, and Vite, while the **backend** is powered by Node.js, Express.js, and MongoDB Atlas.
+This is a full-stack e-commerce shopping cart application. The **frontend** is built using React, and Vite, while the **backend** is powered by Node.js, Express.js, and MongoDB Atlas.
 
 ---
 
