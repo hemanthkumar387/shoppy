@@ -1,0 +1,114 @@
+/* Individual cart item container */
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image */
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Product details section */
+.cart-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Product title */
+.cart-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+}
+
+/* Product title */
+.cart-item-category {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8f8f8f;
+}
+/* Price section */
+.cart-item-price {
+  color: #b12704;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Quantity and buttons container */
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Quantity input */
+.cart-item-quantity {
+  width: 60px;
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Remove button */
+.cart-item-remove {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-remove:hover {
+  background-color: #d63031;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .cart-item-quantity,
+  .cart-item-remove {
+    width: 48%;
+  }
+
+  .cart-item-image {
+    width: 100%;
+    max-width: 160px;
+  }
+}

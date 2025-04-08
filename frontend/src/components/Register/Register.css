@@ -1,0 +1,92 @@
+/* Container styling for the register form */
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+  
+/* Heading inside the container */
+.register-container h2 {
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #333;
+}
+  
+/* Form layout using flex column */
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+  
+/* Input fields styling */
+.register-container input {
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+ 
+/* Highlight input on focus */
+.register-container input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+ 
+/* Submit button styling */
+.register-container button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ 
+/* Hover effect for button */
+.register-container button:hover {
+  background-color: #0056b3;
+}
+  
+/* Responsive Design */
+@media (max-width: 500px) {
+  .register-container {
+    margin: 40px 16px;
+    padding: 30px 20px;
+  }
+  
+  .register-container h2 {
+    font-size: 22px;
+  }
+  
+  .register-container input,
+  .register-container button {
+    font-size: 15px;
+  }
+}
+  
+/* Text below the form linking to login */
+.register-login-text {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+  
+/* Styling the login link */
+.register-login-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+  
+.register-login-text a:hover {
+  text-decoration: underline;
+}
+  

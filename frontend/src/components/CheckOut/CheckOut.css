@@ -1,0 +1,187 @@
+/* Container for the entire checkout page */
+.checkout-container {
+    max-width: 600px;
+    width: 90%;
+    margin: 70px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Title styling for the checkout page */
+  .checkout-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  /* Form layout with spacing */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling */
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+  }
+  
+  /* Input and textarea fields */
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+  }
+  
+  /* Row layout for city and state */
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  /* Error message styling */
+  .form-error {
+    color: #d32f2f;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  
+  /* Order summary section */
+  .order-summary {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f9fafb;
+    border: 1px solid #eee;
+    border-radius: 10px;
+  }
+  
+  .order-summary h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .order-summary p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  /* Order button */
+  .place-order-btn {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .place-order-btn:hover {
+    background: #218838;
+  }
+  
+  /* Order success message */
+  .order-success {
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .order-success h2 {
+    color: #28a745;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .order-success p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  /* Back to shopping button */
+  .back-to-shopping-btn {
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .back-to-shopping-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .checkout-container {
+      padding: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .place-order-btn,
+    .back-to-shopping-btn {
+      font-size: 16px;
+      padding: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .checkout-title {
+      font-size: 22px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .place-order-btn,
+    .back-to-shopping-btn {
+      font-size: 15px;
+      padding: 12px;
+    }
+  
+    .order-summary p {
+      font-size: 14px;
+    }
+  }

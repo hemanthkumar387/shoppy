@@ -1,0 +1,62 @@
+/* Styles for the product container */
+.product-item {
+  flex: 0 0 auto;
+  width: 320px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover effect to slightly lift the product item */
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Styles for the product image */
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Styles for the product title */
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+/* Styles for the product price */
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b12704;
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+/* Styles for the 'View Details' button */
+.product-link {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff9f00;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Hover effect for the 'View Details' button */
+.product-link:hover {
+  background-color: #ff7a00;
+}

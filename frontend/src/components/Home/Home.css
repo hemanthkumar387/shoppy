@@ -1,0 +1,88 @@
+/* Styles for the home container */
+.home-container {
+    margin-top: 54px;
+}
+
+/* Styling for the home page title */
+.home-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Loading text styles */
+.loading {
+    font-weight: bolder;
+    font-size: 28px;
+    color: #007bff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Error message styles */
+.error {
+    font-weight: bolder;
+    font-size: 28px;
+    color: #d32f2f;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Container for the scrolling text */
+.scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    background-color: #007bff;
+    padding: 10px;
+}
+
+/* Inner container for the scrolling text */
+.scrolling-text {
+    display: flex;
+    gap: 10px;
+    animation: scroll 15s linear infinite;
+    min-width: 200%;
+}
+
+/* Styling for each scrolling item */
+.scrolling-item {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Styling for the search input field */
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Search bar styles when focused */
+.search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

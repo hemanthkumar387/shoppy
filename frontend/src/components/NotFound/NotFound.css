@@ -1,0 +1,85 @@
+/* Container styling for the 404 page */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, #e3f2fd, #fce4ec); /* Gradient background */
+    color: #333;
+    padding: 20px;
+    animation: fadeIn 1s ease-in; /* Page fade-in animation */
+}
+
+/* Bouncing 404 title */
+.not-found-title {
+    font-size: 72px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin: 0;
+    animation: bounce 2s infinite;
+}
+
+/* Styling for the error message */
+.not-found-text {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #555;
+}
+
+/* Back to home button */
+.back-home-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+}
+
+/* Bouncing animation for 404 */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Fade-in animation for whole container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+    .not-found-title {
+        font-size: 48px;
+    }
+
+    .not-found-text {
+        font-size: 18px;
+    }
+
+    .back-home-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

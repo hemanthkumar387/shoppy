@@ -1,0 +1,34 @@
+/* Main container for the product list */
+.product-list {
+  padding: 20px;
+}
+
+/* Each category section */
+.category-section {
+  margin-bottom: 30px;
+}
+
+/* Styling for the category title */
+.category-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  padding-left: 10px;
+}
+
+/* Container for horizontally scrolling product items */
+.product-scroll {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+/* Scrollbar styling for WebKit browsers (Chrome, Safari) */
+.product-scroll::-webkit-scrollbar {
+  height: 8px;
+}
